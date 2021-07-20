@@ -3,6 +3,10 @@ import { Container, Typography } from "@material-ui/core";
 import styles from "./Home.module.css";
 import Carousel from "fade-carousel";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
+
+
+
 const Home = () => {
   const urls = [
     "LOX SERVICES",
@@ -43,8 +47,13 @@ const Home = () => {
             </div>
           </Slider>
           <div className={styles.home_btns}>
+            <Link to='/signup'>
             <button>SIGN UP</button>
-            <button>LOG IN</button>
+            </Link>
+            <Link to='/login'>
+              <button>LOG IN</button>
+            </Link>
+          
           </div>
         </div>
       </Container>

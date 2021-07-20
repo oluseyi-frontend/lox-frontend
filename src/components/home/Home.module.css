@@ -46,7 +46,7 @@ margin-top: 20px;
 
 .home_btns button{
     height: 50px;
-width: 320px;
+width: 100%;
 background: #000000;
 border-radius: 0px;
 color: #fff;
@@ -58,6 +58,7 @@ font-weight: 700;
 line-height: 19px;
 letter-spacing: 1px;
 text-align: center;
+border: none;
 }
 .home_btns button:nth-child(2){
     background: #FFFFFF;

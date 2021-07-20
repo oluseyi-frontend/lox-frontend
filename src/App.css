@@ -1,8 +1,17 @@
 .App {
-      height: 100vh;
+      height: 100%;
     width: 100%;
     display: flex;
     background: #E5E5E5;
     align-items: center;
     justify-content: center;
+    padding: 2rem 0;
+}
+
+@media (max-width: 450px) {
+  .App {
+    
+    padding:  0;
+}
+
 }
