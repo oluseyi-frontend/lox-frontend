@@ -1,0 +1,40 @@
+.app_container {
+      background-color: white;
+    height: 667px;
+width: 375px;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+position: relative;
+border-radius: 0px;
+}
+
+.my_container {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+
+@media (max-width: 450px ){
+   
+
+.my_container {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    height: 100%;
+}
+.app_container{
+    height: 100%;
+    width: 100%;
+}
+}
+
+@media (max-height: 667px) {
+     .app_container {
+ 
+overflow: scroll;
+
+
+}
+}

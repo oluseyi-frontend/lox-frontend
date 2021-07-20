@@ -1,0 +1,172 @@
+.location{
+    padding: 5rem 0rem 1rem 0rem;
+}
+
+.location_content {
+
+}
+
+.location_title{
+    background: #F2F2F259;
+    padding: 12px;
+
+}
+
+.location_title h6{
+font-family: Rounded Mplus 1c Bold;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 1px;
+
+}
+
+.location_title p{
+font-family: Rounded Mplus 1c;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 1px;
+
+
+}
+
+.location_date {
+    padding-top: 20px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+
+}
+.location_date h6{
+font-family: Rounded Mplus 1c;
+font-size: 12px;
+font-style: normal;
+font-weight: 800;
+line-height: 18px;
+letter-spacing: 1px;
+
+}
+
+.location_date p{
+font-family: Rounded Mplus 1c;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 1px;
+
+
+}
+
+
+
+.location_img {
+    width: 100%;
+}
+
+.location_img img{
+    width: 100%;
+}
+
+.oval{
+    height: 10px;
+width: 10px;
+left: 9px;
+top: 382px;
+border-radius: 50%;
+margin-right: 10px;
+
+}
+.location_yours{
+display: flex;
+align-items: center;
+padding: 15px 0 15px 12px;
+border-bottom: 1px solid #D0D4D9;
+}
+
+.location_yours div{
+    background: #5A6CB5;
+}
+
+.location_change{
+display: flex;
+align-items: center;
+padding: 15px 0 15px 12px;
+border-bottom: 1px solid #D0D4D9;
+}
+.location_change p{
+    font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 1px;
+text-align: left;
+
+}
+.location_yours p{
+    font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 1px;
+text-align: left;
+
+}
+.location_change div {
+    background: #ED1C24;
+
+}
+
+.location_name {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #D0D4D9;
+}
+.location_name img {
+    margin-right: 12px;
+}
+
+.location_name p{
+    font-family: Open Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0px;
+
+color: #222B45;
+
+
+}
+
+.location_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:  0 25px;
+}
+.location_btn a {
+    width: 100%;
+}
+.location_btn button{
+    height: 50px;
+width: 100%;
+filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+
+background: #000000;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 1px;
+text-align: center;
+color: white;
+border: none;
+margin-top: 25px;
+}

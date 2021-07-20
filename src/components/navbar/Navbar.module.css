@@ -1,0 +1,33 @@
+.nav {
+ position: absolute;
+ width: 100%;
+ display: flex;
+padding: 16px 0;
+
+ 
+}
+
+.nav_content {
+   display: flex;
+   width: 100%;
+
+}
+.burger{
+   
+}
+.burger img {
+    width: 17px;
+    height: 15px;
+   margin-left: 16px;
+
+}
+.title {
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.title p{
+    color: red;
+}
