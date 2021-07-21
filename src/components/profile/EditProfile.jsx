@@ -1,10 +1,26 @@
-import React from "react";
+import React, {useContext, useEffect} from "react";
 import styles from "./EditProfile.module.css";
 import Navbar from "./../navbar/Navbar";
 import { Typography } from "@material-ui/core";
 import upload from "./images/Group 2043.svg";
+import { dataCentral } from './../../context';
+import { useHistory } from 'react-router';
+
 
 const EditProfile = () => {
+  const { open, setOpen, jwt } = useContext(dataCentral)
+  const history = useHistory()
+  useEffect(() => {
+  checkJwt()
+  }, [])
+  
+  const checkJwt = () => {
+    if (jwt) {
+      
+    } else {
+      history.push('/login')
+    }
+  }
   return (
     <>
       <Navbar />

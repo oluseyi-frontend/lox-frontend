@@ -129,6 +129,16 @@ text-decoration: none;
 
 }
 
+.circular_progress{
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.circular_progress svg {
+  color: white !important;
+}
+
+
 @media (max-width: 450px) {
     .my_container {
     display: flex !important;

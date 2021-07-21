@@ -10,13 +10,24 @@ import { useHistory } from "react-router";
 import { useContext } from "react";
 import { dataCentral } from './../../context';
 import Menu from './../menu/Menu';
+import { useEffect } from "react";
 
 
 const Order = () => {
   const history = useHistory()
-  const { open, setOpen } = useContext(dataCentral)
+  const { open, setOpen, jwt } = useContext(dataCentral)
   
-
+  useEffect(() => {
+  checkJwt()
+  }, [])
+  
+  const checkJwt = () => {
+    if (jwt) {
+      
+    } else {
+      history.push('/login')
+    }
+  }
   const handleAside = () => {
     setOpen(true)
    };

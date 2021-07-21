@@ -7,9 +7,13 @@ import { useContext } from "react";
 import { dataCentral } from './../../context';
 
 const Menu = () => {
-  const {open, setOpen} = useContext(dataCentral)
+  const {open, setOpen, setJwt} = useContext(dataCentral)
   const closeAside = () => {
     setOpen(false)
+  }
+
+  const handleLogOut = () => {
+    setJwt('')
   }
   return (
     <div className={open? styles.menu_active: styles.menu}>
@@ -32,7 +36,7 @@ const Menu = () => {
             </ul>
           </div>
           <div className={styles.sign_out}>
-            <Link to='/login'>Sign Out</Link>
+            <Link onClick={handleLogOut} to='/login'>Sign Out</Link>
           </div>
         </div>
       </Container>

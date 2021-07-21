@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Navbar from "./../navbar/Navbar";
 import styles from "./workRequest.module.css";
 import { Typography } from "@material-ui/core";
@@ -12,7 +12,8 @@ import Prompt3Component from './Prompt3';
 import Ended from './Ended';
 import Total from './Total1';
 import Total2 from "./Total2";
-
+import { useHistory } from 'react-router';
+import { dataCentral } from './../../context';
 
 const GeneralWorkRequest = () => {
   const [prompt, setPrompt] = useState(true);
@@ -24,7 +25,19 @@ const GeneralWorkRequest = () => {
   const [end, setEnd] = useState(false)
   const [total1, setTotal1] = useState(false)
   const [total2, setTotal2] = useState(false)
+  const { open, setOpen, jwt } = useContext(dataCentral)
+  const history = useHistory()
+  useEffect(() => {
+  checkJwt()
+  }, [])
   
+  const checkJwt = () => {
+    if (jwt) {
+      
+    } else {
+      history.push('/login')
+    }
+  }
 
   const handleWorkRequest = () => {
     setPrompt(false);

@@ -1,11 +1,29 @@
-import React from "react";
+import React, {useEffect, useContext} from "react";
 import styles from "./Location.module.css";
 import Navbar from "./../navbar/Navbar";
 import { Typography } from "@material-ui/core";
 import thumbnail from "./images/thumbnail 1.svg";
 import droplet from "./images/droplet.svg";
 import { Link } from "react-router-dom";
+import { dataCentral } from "../../context";
+import { useHistory } from "react-router";
+
+
 const Location = () => {
+const { open, setOpen, jwt } = useContext(dataCentral)
+  const history = useHistory()
+  useEffect(() => {
+  checkJwt()
+  }, [])
+  
+  const checkJwt = () => {
+    if (jwt) {
+      
+    } else {
+      history.push('/login')
+    }
+  }
+
   return (
     <>
       <Navbar />
