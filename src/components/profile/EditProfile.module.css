@@ -67,6 +67,20 @@ color: #D9D9D9;
 padding: 16px 10px;
 
 }
+input[type="date"]{
+ height: 47px;
+border: 1px solid #D2D2D2;
+    width: 100% !important;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.4099999964237213px;
+
+color: #D9D9D9;
+padding: 16px 10px;
+}
 
 .edit_content form label input::placeholder{
     font-family: Inter;
